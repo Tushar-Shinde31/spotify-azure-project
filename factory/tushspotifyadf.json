@@ -1,0 +1,15 @@
+{
+	"name": "tushspotifyadf",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "d03f9e87-e9a1-4585-b40b-f911a1ff82eb",
+		"tenantId": "c1154c5d-888d-4ba1-b1ee-f87a37e06401"
+	}
+}
