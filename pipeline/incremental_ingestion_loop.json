@@ -318,37 +318,6 @@
 						}
 					]
 				}
-			},
-			{
-				"name": "Web1",
-				"type": "WebActivity",
-				"dependsOn": [
-					{
-						"activity": "ForEach1",
-						"dependencyConditions": [
-							"Failed",
-							"Skipped",
-							"Succeeded",
-							"Completed"
-						]
-					}
-				],
-				"policy": {
-					"timeout": "0.12:00:00",
-					"retry": 0,
-					"retryIntervalInSeconds": 30,
-					"secureOutput": false,
-					"secureInput": false
-				},
-				"userProperties": [],
-				"typeProperties": {
-					"method": "POST",
-					"url": "https://prod-28.northcentralus.logic.azure.com:443/workflows/2df1ce15bf5d4ac7838aff3633a22b74/triggers/When_an_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_an_HTTP_request_is_received%2Frun&sv=1.0&sig=l4DSXfGTeeD1xXo4P09McwFk4Wc1uB0PoQqM1SdJSwg",
-					"body": {
-						"value": "{\n    \"pipeline_name\" : \"@{pipeline().Pipeline}\",\n    \"pipeline_runid\" : \"@{pipeline().RunId}\"\n}",
-						"type": "Expression"
-					}
-				}
 			}
 		],
 		"parameters": {
